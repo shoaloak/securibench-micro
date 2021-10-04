@@ -25,7 +25,7 @@
 			</td>
 		</tr>
 		<tr align=left>	
-			<td align=left>Class: <a href="/webdav/<XDtPackage:packageNameAsPath/>/<XDtClass:className/>.java.html"><XDtClass:fullClassName/></a></td>
+			<td align=left>Class: <a href="webdav/<XDtPackage:packageNameAsPath/>/<XDtClass:className/>.java.html"><XDtClass:fullClassName/></a></td>
 			<td align=left>Description: <b><XDtClass:classTagValue tagName="servlet" paramName="description"/></b></td>
 			<td align=left>Expected bug count: <b><XDtClass:classTagValue tagName="servlet" paramName="vuln_count"/></b></td>
 		</tr>	

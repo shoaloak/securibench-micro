@@ -44,6 +44,8 @@
 		<delete dir="${webdav}${web.context}" />
 		<delete dir="${rootdir}/${colorized.dir}" />
 		<delete file="${rootdir}/securibench-micro-${version}.zip" />
+		<delete file="${rootdir}/index.html" />
+		<delete file="${rootdir}/web.xml" />
 	</target>
 
 	<!-- MK DEPLOY DIR -->
@@ -105,4 +107,11 @@
 			basedir="${rootdir}" 
 			excludes="${rootdir}/securibench-micro-*.zip,**/*.class"/>
 	</target>
+
+	<target name="war" depends="cleandist,colorize">
+		<echo message="Creating a war of Securibench Micro..." />
+		<zip destfile="${rootdir}/securibench-micro.war" 
+		basedir="${appDeployDir}" />
+	</target>
+
 </project>
